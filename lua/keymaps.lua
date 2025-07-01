@@ -66,4 +66,7 @@ vim.keymap.set('n', '<leader>os', '<cmd>OverseerSaveBundle<cr>', { desc = 'Save 
 vim.keymap.set('n', '<leader>od', '<cmd>OverseerDeleteBundle<cr>', { desc = 'Delete bundle' })
 vim.keymap.set('n', '<leader>oR', '<cmd>OverseerRunCmd<cr>', { desc = 'Run command' })
 
+-- [[ Neo-tree File Explorer ]]
+vim.keymap.set('n', '<leader>e', '<cmd>Neotree reveal<cr>', { desc = 'NeoTree reveal' })
+
 -- vim: ts=2 sts=2 sw=2 et
