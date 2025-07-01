@@ -1,6 +1,20 @@
 -- Overseer task runner
 return {
   'stevearc/overseer.nvim',
+  keys = {
+    { '<leader>oo', '<cmd>OverseerOpen<cr>', desc = 'Open overseer' },
+    { '<leader>oc', '<cmd>OverseerClose<cr>', desc = 'Close overseer' },
+    { '<leader>ot', '<cmd>OverseerToggle<cr>', desc = 'Toggle overseer' },
+    { '<leader>or', '<cmd>OverseerRun<cr>', desc = 'Run task' },
+    { '<leader>oq', '<cmd>OverseerQuickAction<cr>', desc = 'Quick action' },
+    { '<leader>oa', '<cmd>OverseerTaskAction<cr>', desc = 'Task action' },
+    { '<leader>oi', '<cmd>OverseerInfo<cr>', desc = 'Overseer info' },
+    { '<leader>ob', '<cmd>OverseerBuild<cr>', desc = 'Build task' },
+    { '<leader>ol', '<cmd>OverseerLoadBundle<cr>', desc = 'Load bundle' },
+    { '<leader>os', '<cmd>OverseerSaveBundle<cr>', desc = 'Save bundle' },
+    { '<leader>od', '<cmd>OverseerDeleteBundle<cr>', desc = 'Delete bundle' },
+    { '<leader>oR', '<cmd>OverseerRunCmd<cr>', desc = 'Run command' },
+  },
   config = function()
     require('overseer').setup {
       -- Strategy for task output
