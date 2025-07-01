@@ -51,4 +51,19 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- [[ Overseer Task Runner ]]
+-- Add overseer keymaps so they show up in which-key immediately
+vim.keymap.set('n', '<leader>oo', '<cmd>OverseerOpen<cr>', { desc = 'Open overseer' })
+vim.keymap.set('n', '<leader>oc', '<cmd>OverseerClose<cr>', { desc = 'Close overseer' })
+vim.keymap.set('n', '<leader>ot', '<cmd>OverseerToggle<cr>', { desc = 'Toggle overseer' })
+vim.keymap.set('n', '<leader>or', '<cmd>OverseerRun<cr>', { desc = 'Run task' })
+vim.keymap.set('n', '<leader>oq', '<cmd>OverseerQuickAction<cr>', { desc = 'Quick action' })
+vim.keymap.set('n', '<leader>oa', '<cmd>OverseerTaskAction<cr>', { desc = 'Task action' })
+vim.keymap.set('n', '<leader>oi', '<cmd>OverseerInfo<cr>', { desc = 'Overseer info' })
+vim.keymap.set('n', '<leader>ob', '<cmd>OverseerBuild<cr>', { desc = 'Build task' })
+vim.keymap.set('n', '<leader>ol', '<cmd>OverseerLoadBundle<cr>', { desc = 'Load bundle' })
+vim.keymap.set('n', '<leader>os', '<cmd>OverseerSaveBundle<cr>', { desc = 'Save bundle' })
+vim.keymap.set('n', '<leader>od', '<cmd>OverseerDeleteBundle<cr>', { desc = 'Delete bundle' })
+vim.keymap.set('n', '<leader>oR', '<cmd>OverseerRunCmd<cr>', { desc = 'Run command' })
+
 -- vim: ts=2 sts=2 sw=2 et
